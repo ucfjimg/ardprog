@@ -12,7 +12,7 @@
 #define SDATA 9                // Data for shift register
 #define BUSENB 10              // When HIGH, shift register outputs drive bus
 
-#define RESET 11
+#define RESET 11               // Reset the computer
 
 // Take control of computer from microcode.
 //
@@ -68,7 +68,7 @@ void putDataOnBus(int data) {
   digitalWrite(RCLK, LOW);
 }
 
-// Temporary set the specified computer control signal and pulse
+// Temporarily set the specified computer control signal and pulse
 // the computer's clock
 //
 void clockControlLine(int pin) {
